@@ -7,8 +7,8 @@ ALIAS="\n# Auto Makefile\nalias automakefile='sh /Users/naranjito/.auto_makefile
 
 # I N S T A L L   A U T O M A K E F I L E
 mkdir ~/.auto_makefile
-
-cp autoMakefile ~/.auto_makefile
+pwd
+cp autoMakefile.sh ~/.auto_makefile
 
 
 
