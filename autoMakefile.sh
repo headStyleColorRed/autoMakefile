@@ -1,22 +1,3 @@
-FILE=~/.zshrc
-ZSHRC_EXISTS=false
-ALIAS="\n# Auto Makefile\nalias automakefile='sh /Users/naranjito/.auto_makefile/autoMakefile.sh'"
-
-# C R E A T E   A L I A S
-if [ -f "$FILE" ]; then
-	ZSHRC_EXISTS=true
-else
-    echo "$FILE was created, restart the terminal!"
-	echo "$ALIAS" >> ~/.zshrc
-fi
-
-if [ $ZSHRC_EXISTS ]; then
-	if ! grep  "automakefile" $FILE; then
-    	echo "makefile alias was added, restart the terminal!"
-    	echo "$ALIAS" >> ~/.zshrc
-	fi
-fi
-
 # C R E A T E   M A K E F I L E
 
 find . -name "*.c" > files.txt
